@@ -1,3 +1,3 @@
-module github.com/ledgerwatch/secp256k1
+module github.com/NebojsaHorvat/secp256k1
 
 go 1.16
