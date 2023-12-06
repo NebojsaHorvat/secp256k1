@@ -7,7 +7,7 @@
 #ifndef lw_secp256k1_MODULE_RECOVERY_MAIN_H
 #define lw_secp256k1_MODULE_RECOVERY_MAIN_H
 
-#include "include/lw_secp256k1_recovery.h"
+#include "include/secp256k1_recovery.h"
 
 static void lw_secp256k1_ecdsa_recoverable_signature_load(const lw_secp256k1_context* ctx, lw_secp256k1_scalar* r, lw_secp256k1_scalar* s, int* recid, const lw_secp256k1_ecdsa_recoverable_signature* sig) {
     (void)ctx;

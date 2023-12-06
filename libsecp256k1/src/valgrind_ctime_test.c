@@ -9,7 +9,7 @@
 #include "util.h"
 
 #if ENABLE_MODULE_ECDH
-# include "include/lw_secp256k1_ecdh.h"
+# include "include/secp256k1_ecdh.h"
 #endif
 
 int main(void) {

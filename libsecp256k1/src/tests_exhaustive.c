@@ -28,7 +28,7 @@
 
 #ifdef ENABLE_MODULE_RECOVERY
 #include "src/modules/recovery/main_impl.h"
-#include "include/lw_secp256k1_recovery.h"
+#include "include/secp256k1_recovery.h"
 #endif
 
 /** stolen from tests.c */

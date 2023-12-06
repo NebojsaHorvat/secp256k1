@@ -7,7 +7,7 @@
 #ifndef lw_secp256k1_MODULE_ECDH_MAIN_H
 #define lw_secp256k1_MODULE_ECDH_MAIN_H
 
-#include "include/lw_secp256k1_ecdh.h"
+#include "include/secp256k1_ecdh.h"
 #include "ecmult_const_impl.h"
 
 static int ecdh_hash_function_sha256(unsigned char *output, const unsigned char *x32, const unsigned char *y32, void *data) {
