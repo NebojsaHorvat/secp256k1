@@ -42,7 +42,7 @@ package secp256k1
 #include "ext.h"
 
 typedef void (*callbackFunc) (const char* msg, void* data);
-extern void secp256k1GoPanicIllegal(const char* msg, void* data);
+extern void lw_secp256k1GoPanicIllegal(const char* msg, void* data);
 extern void lw_secp256k1GoPanicError(const char* msg, void* data);
 */
 import "C"
@@ -75,7 +75,7 @@ func init() {
 func initContext() *C.lw_secp256k1_context {
 	// around 20 ms on a modern CPU.
 	ctx := C.lw_secp256k1_context_create_sign_verify()
-	C.lw_secp256k1_context_set_illegal_callback(ctx, C.callbackFunc(C.secp256k1GoPanicIllegal), nil)
+	C.lw_secp256k1_context_set_illegal_callback(ctx, C.callbackFunc(C.lw_secp256k1GoPanicIllegal), nil)
 	C.lw_secp256k1_context_set_error_callback(ctx, C.callbackFunc(C.lw_secp256k1GoPanicError), nil)
 	return ctx
 }
